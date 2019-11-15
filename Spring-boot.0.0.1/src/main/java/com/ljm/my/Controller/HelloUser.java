@@ -12,8 +12,8 @@ public class HelloUser {
 
     @RequestMapping("hello/{id}")
     @ResponseBody
-    public User Holleuser(@PathVariable() Integer id){
-        User user=new User();
+    public User Holleuser(@PathVariable() Integer id) {
+        User user = new User();
         user.setId(id);
         user.setPassword("123456");
         user.setUsername("Ljm");

@@ -13,16 +13,16 @@ import java.util.List;
 @RequestMapping("stu")
 public class HelloStudent {
 
-    @RequestMapping(value = "list",method = RequestMethod.GET)
-    public String list ( Model model){
-    Student student01=new Student(1001,"战神",18);
-    Student student02=new Student(1002,"试试",18);
-    Student student03=new Student(1003,"方法",18);
-        List<Student> list=new ArrayList();
+    @RequestMapping(value = "list", method = RequestMethod.GET)
+    public String list(Model model) {
+        Student student01 = new Student(1001, "战神", 18);
+        Student student02 = new Student(1002, "试试", 18);
+        Student student03 = new Student(1003, "方法", 18);
+        List<Student> list = new ArrayList();
         list.add(student01);
         list.add(student02);
         list.add(student03);
-        model.addAttribute("list" ,list);
+        model.addAttribute("list", list);
 
         System.out.println("这是list");
         return "list";

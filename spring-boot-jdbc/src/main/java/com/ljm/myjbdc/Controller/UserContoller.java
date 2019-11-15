@@ -14,9 +14,9 @@ public class UserContoller {
 
     @RequestMapping("acc")
     @ResponseBody
-    public String addUser(String name,String password){
+    public String addUser(String name, String password) {
 
-        userservice.adduser(name,password);
+        userservice.adduser(name, password);
 
         return "成功+访问地址http://localhost:8080/acc?name=a&password=123";
     }

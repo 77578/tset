@@ -10,9 +10,9 @@ public class UserDaoimpl implements UserDao {
     private JdbcTemplate jdbcTemplate;
 
     @Override
-    public void adduser(String name,String password){
+    public void adduser(String name, String password) {
 
-        String sql="insert user (name,password) values (?,?)";
+        String sql = "insert user (name,password) values (?,?)";
         jdbcTemplate.update(sql, name, password);
 
     }

@@ -9,7 +9,7 @@ public class HelloController {
 
     //*@GetMapping(value = "/Hello/{name}")
     @RequestMapping(value = "/Hello/{name}")
-    public String sayHi( @PathVariable String name) {
-        return name+"Hello Spring Boot.";
+    public String sayHi(@PathVariable String name) {
+        return name + "Hello Spring Boot.";
     }
 }
