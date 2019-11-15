@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>safrf</h1>
+<table border="1">
+    <tr>
+        <td>id</td>
+        <td>名字</td>
+        <td>年龄</td>
+    </tr>
+    <tbody th:each="article : ${list}">
+    <tr>
+        <td th:text="${article.id}"></td>
+        <td th:text="${article.name}"></td>
+        <td th:text="${article.age}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
