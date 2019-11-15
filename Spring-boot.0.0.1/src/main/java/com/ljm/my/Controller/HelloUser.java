@@ -17,6 +17,7 @@ public class HelloUser {
         user.setId(id);
         user.setPassword("123456");
         user.setUsername("Ljm");
+        System.out.println(123);
         return user;
     }
 }
