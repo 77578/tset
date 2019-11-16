@@ -12,4 +12,5 @@
     <select id="Sel" resultType="com.ljm.mybetis.entity.User">
         select * from userdemo where id = #{id}
     </select>
+
 </mapper>
