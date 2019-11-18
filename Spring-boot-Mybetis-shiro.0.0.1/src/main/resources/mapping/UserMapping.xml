@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljm.demo.Dao.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.ljm.demo.entity.User">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="userName" jdbcType="VARCHAR" property="userName" />
+        <result column="passWord" jdbcType="VARCHAR" property="passWord" />
+        <result column="realName" jdbcType="VARCHAR" property="realName" />
+    </resultMap>
+
+    <select id="Sel" resultType="com.ljm.demo.entity.User">
+        select * from userdemo where id = #{id}
+    </select>
+
+    <select id="Selname" resultType="com.ljm.demo.entity.User">
+        select * from userdemo where  userName = #{arg0}
+    </select>
+
+</mapper>
