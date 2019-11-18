@@ -88,6 +88,7 @@ public class shiroContrller {
     @RequestMapping(value = "/sh",method = RequestMethod.GET)
     @ResponseBody
     public String sh(){
+        System.out.println("测试数据");
         User sel = userService.Selname("acc");
 
         return sel.toString();
